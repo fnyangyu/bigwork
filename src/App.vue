@@ -7,7 +7,6 @@
       <router-view>
         <Main />
       </router-view>
-      <Foot />
     </div>
     </div>
 </template>
@@ -15,13 +14,11 @@
 <script>
 import Header from './components/header.vue'
 import Banner from './components/banner.vue'
-import Foot from './components/foot.vue'
 export default {
   name: 'App',
   components: {
     Header,
-    Banner,
-    Foot
+    Banner
   }
 }
 </script>

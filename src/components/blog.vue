@@ -25,12 +25,17 @@
         <a href="javascript:void(0)">方法</a>
       </div>
     </div>
+    <Foot />
   </div>
 </template>
 
 <script scoped>
+import Foot from './foot'
 export default {
-  name: 'blog'
+  name: 'blog',
+  components: {
+    Foot
+  }
 }
 </script>
 

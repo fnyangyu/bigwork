@@ -32,15 +32,18 @@
       </div>
       <p>Stay Hungry Stay Foo</p>
     </div>
+    <Foot />
   </div>
 </template>
 
 <script>
 import Banner from './banner'
+import Foot from './foot.vue'
 export default {
   name: 'Main',
   components: {
-    Banner
+    Banner,
+    Foot
   }
 }
 </script>
