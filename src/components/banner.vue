@@ -1,7 +1,7 @@
 <template>
   <div id='banner'>
     <div>
-      <img src="http://b122.photo.store.qq.com/psb?/V13N28QH4Cdvde/0pG1FGyu4*uvu1aZbAB1bCbFq38XbeIyZy5EXAzI70Y!/m/dADlwEhZEQAAnull&bo=hgIgAyAD3gMBCHY!&rf=photolist&t=5" alt="">
+      <img src="../../img/psb.jpg" alt="">
     </div>
     <h1>欢迎来到我的网上家园</h1>
   </div>
@@ -26,6 +26,9 @@ export default {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+}
+#banner > div > img {
+  width: 200px;
 }
 #banner > h1 {
   margin-top: 40px;

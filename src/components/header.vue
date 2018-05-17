@@ -5,11 +5,11 @@
       <router-link to='/'>
         杨雨的家
       </router-link>
-      <span v-if='show'>
+      <!-- <span v-if='show'>
         <router-link to='path'>
           > {{pathName}}
-        </router-link>
-      </span>
+        </router-link> -->
+      <!-- </span> -->
       </h2>
   </div>
 </template>
@@ -18,17 +18,17 @@
 export default {
   name: 'Header',
   computed: {
-    path() {
-      return this.$route.path
-    },
-    pathName() {
-      // swith(
-      //   this.
-      // )
-    },
-    show() {
-      return this.$router.path !== '/'
-    }
+    //   path() {
+    //     return this.$route.path
+    //   },
+    //   pathName() {
+    //     swith(
+    //       this.
+    //     )
+    //   },
+    //   show() {
+    //     return this.$router.path !== '/'
+    //   }
   }
 }
 </script>

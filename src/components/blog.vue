@@ -3,14 +3,14 @@
     <div class='blogBanner'>
       <div>
         <div>
-          <img src="http://b198.photo.store.qq.com/psb?/V13N28QH3GQEhc/7OAzk5gd7TYPulX*JOZ9eh4vIjs*.OGp*w.QXe37eUg!/b/dH2tE3b4IwAA&bo=IAOOBYQDQAYFCEI!&rf=viewer_4&t=5" alt="">
+          <img src="../../img/psb (3).jpg" alt="">
         </div>
         <h3>杨雨的博客</h3>
       </div>
     </div>
     <div id='blog'>
       <div>
-        <router-link to='/'>学会创建仓库</router-link>
+        <router-link to="/blog/hobby">我的兴趣爱好</router-link>
       </div>
       <div>
         <a href="javascript:void(0)">vue-cli 搭建开发环境</a>
@@ -25,12 +25,19 @@
         <a href="javascript:void(0)">方法</a>
       </div>
     </div>
+    <Foot />
   </div>
 </template>
 
 <script scoped>
+import BlogComent from './blogComent.vue'
+import Foot from './foot.vue'
 export default {
-  name: 'blog'
+  name: 'blog',
+  components: {
+    BlogComent,
+    Foot
+  }
 }
 </script>
 

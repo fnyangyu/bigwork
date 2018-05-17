@@ -5,13 +5,13 @@
       <div>
         <div>
           <div>
-            <img src="http://b117.photo.store.qq.com/psb?/V13N28QH3GQEhc/OIYskBwupFJcjW9KsTy2dtRx1WrEmLxWTomvSRGhSJU!/m/dHUAAAAAAAAAnull&bo=OASgBWAJgAwRCUI!&rf=photolist&t=5" alt="">
+            <img src="../../img/psb (2).jpg" alt="">
           </div>
           <router-link to='/'>我的简历</router-link>
         </div>
         <div>
           <div>
-            <img src="http://b198.photo.store.qq.com/psb?/V13N28QH3GQEhc/7OAzk5gd7TYPulX*JOZ9eh4vIjs*.OGp*w.QXe37eUg!/b/dH2tE3b4IwAA&bo=IAOOBYQDQAYFCEI!&rf=viewer_4&t=5" alt="">
+            <img src="../../img/psb (3).jpg" alt="">
           </div>
           <router-link to='/blog'>我的博客</router-link>
         </div>
@@ -19,28 +19,31 @@
       <div>
         <div>
           <div>
-            <img src="http://b179.photo.store.qq.com/psb?/V13N28QH3GQEhc/vRQmm1ZSKYSni1J9PXk8fmtv.M*7Or.72Yy1lGdBpE4!/m/dLMAAAAAAAAAnull&bo=OASgBWAJgAwRCUI!&rf=photolist&t=5" alt="">
+            <img src="../../img/psb (4).jpg" alt="">
           </div>
           <router-link to='/'>我的笔记</router-link>
         </div>
         <div>
           <div>
-            <img src="http://b198.photo.store.qq.com/psb?/V13N28QH3GQEhc/gIUfnofLUoz.0KTmOdeC*nmRuPA9ePlfS92Vb1CbDeE!/m/dCw1EnbxIwAAnull&bo=IAOOBYQDQAYFCEI!&rf=photolist&t=5" alt="">
+            <img src="../../img/psb (1).jpg" alt="">
           </div>
           <router-link to='/'>我的相册</router-link>
         </div>
       </div>
       <p>Stay Hungry Stay Foo</p>
     </div>
+    <Foot />
   </div>
 </template>
 
 <script>
 import Banner from './banner'
+import Foot from './foot'
 export default {
   name: 'Main',
   components: {
-    Banner
+    Banner,
+    Foot
   }
 }
 </script>
