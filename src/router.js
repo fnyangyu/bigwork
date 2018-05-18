@@ -15,11 +15,16 @@ export default new Router({
     },
     {
       path: '/blog',
+      redirect: 'blog/hobby/life',
       component: Blog
     },
     {
       path: '/blog/:id',
       component: BlogComent
-    }
+    },
+    {
+      path: '/blog/hobby/:id',
+      component: BlogComent
+    },
   ]
 })
