@@ -5,35 +5,38 @@
       <router-link to='/'>
         杨雨的家
       </router-link>
-      <!-- <span v-if='show'>
-        <router-link to='path'>
-          > {{pathName}}
-        </router-link>
-      </span> -->
+      <span v-if='showNav'>
+        > 
+        <router-link :to='rootPath'>{{pathName}}</router-link>
+      </span>
       </h2>
   </div>
 </template>
 
-<script scoped>
+<script>
+import { getPathName } from '../constants/RouteConstants.js'
+import { getRootPath } from '../utils'
+
 export default {
   name: 'Header',
   computed: {
-    // path() {
-    //   return this.$route.path
-    // },
-    // pathName() {
-    //   // swith(
-    //   //   this.
-    //   // )
-    // },
-    // show() {
-    //   return this.$router.path !== '/'
-    // }
+    path() {
+      return this.$route.path
+    },
+    rootPath() {
+      return getRootPath(this.path)
+    },
+    showNav() {
+      return this.path !== '/'
+    },
+    pathName() {
+      return getPathName(this.rootPath)
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 #header {
   width: 100%;
   display: flex;
@@ -45,6 +48,7 @@ export default {
   margin-right: 40px;
 }
 #header > h2 > a,
+#header > h2 > span,
 #header > h2 > span > a {
   line-height: 80px;
   color: #fff;

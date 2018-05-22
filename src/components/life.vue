@@ -7,7 +7,7 @@
       <p>体重： 105kg</p>
       <p>年龄： 18+</p>
       <p>兴趣爱好： 撸猫吸狗，和朋友玩游戏，逛街</p>
-      <p>饮食习惯： 除了辣椒，香菜，咸菜和酒以外其他没有什么忌口(正常人类饮食范围内)</p>
+      <p>饮食习惯： 除了辣椒，香菜，咸菜和酒以外其他没什么忌口的<span>(正常人类饮食范围内!!)</span></p>
       <p>本人性格： 开朗大方，脾气温和，不惹我就不生气</p>
     </div>
   </div>
@@ -44,6 +44,9 @@ export default {
   text-align: left;
   line-height: 50px;
   font-size: 14px;
+}
+#life > div > p > span {
+  color: red;
 }
 #life > div > img {
   width: 150px;

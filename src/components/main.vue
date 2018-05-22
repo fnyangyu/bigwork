@@ -21,13 +21,13 @@
           <div>
             <img src="../../img/psb (4).jpg" alt="">
           </div>
-          <router-link to='/'>我的笔记</router-link>
+          <router-link to='/mynote'>我的笔记</router-link>
         </div>
         <div>
           <div>
             <img src="../../img/psb (1).jpg" alt="">
           </div>
-          <router-link to='/'>我的相册</router-link>
+          <router-link to='/myalbum'>我的相册</router-link>
         </div>
       </div>
       <p>Stay Hungry Stay Foo</p>

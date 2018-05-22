@@ -3,26 +3,14 @@
     <div class='blogBanner'>
       <div>
         <div>
-          <img src="../../img/psb (3).jpg" alt="">
+          <img src="../../img/psb (4).jpg" alt="">
         </div>
-        <h3>杨雨的博客</h3>
+        <h3>杨雨的笔记</h3>
       </div>
     </div>
     <div id='blog'>
       <div>
-        <router-link to="/blog/hobby">我的兴趣爱好</router-link>
-      </div>
-      <div>
         <a href="javascript:void(0)">vue-cli 搭建开发环境</a>
-      </div>
-      <div>
-        <a href="javascript:void(0)">添加 Vue 组件</a>
-      </div>
-      <div>
-        <a href="javascript:void(0)">state</a>
-      </div>
-      <div>
-        <a href="javascript:void(0)">方法</a>
       </div>
     </div>
     <Foot />
